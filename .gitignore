@@ -1,5 +1,9 @@
 node_modules/
 *.log/
+haters/
 .next/
 .build/
+.DS_Store/
+layout.md
+variables.env
 

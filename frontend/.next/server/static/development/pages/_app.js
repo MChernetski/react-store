@@ -119,19 +119,15 @@ var _jsxFileName = "/Users/peggy/projects/react_new/wesbos/react-store/frontend/
 
 
 
-
-next_router__WEBPACK_IMPORTED_MODULE_3___default.a.onRouteChangeStart = function () {
-  console.log('onRouteChangeStart');
-};
-
-next_router__WEBPACK_IMPORTED_MODULE_3___default.a.onRouteChangeComplete = function () {
-  console.log('onRouteChangeComplete');
-};
-
-next_router__WEBPACK_IMPORTED_MODULE_3___default.a.onRouteChangeError = function () {
-  console.log('onRouteChangeError');
-};
-
+next_router__WEBPACK_IMPORTED_MODULE_3___default.a.events.on('routeChangeStart', function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_4___default.a.start();
+});
+next_router__WEBPACK_IMPORTED_MODULE_3___default.a.events.on('routeChangeComplete', function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_4___default.a.done();
+});
+next_router__WEBPACK_IMPORTED_MODULE_3___default.a.events.on('routeChangeError', function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_4___default.a.done();
+});
 
 var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.h1.withConfig({
   displayName: "Header__Logo",
@@ -152,58 +148,58 @@ var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHeader, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 58
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 59
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 60
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 61
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 62
     },
     __self: this
   }, "Storm Store"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 65
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "sub-bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 67
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 68
     },
     __self: this
   }, "Search")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 70
     },
     __self: this
   }, "Cart"));
